@@ -1,6 +1,6 @@
 # bml-Go
 
-[![Run Docker with Tests (Go)](https://github.com/PedroDrim/bml-golang/actions/workflows/golang.yml/badge.svg?branch=simpleclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/golang.yml)
+[![Run Docker with Tests (Go)](https://github.com/PedroDrim/bml-golang/actions/workflows/go.yml/badge.svg?branch=simpleclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/go.yml)
 [![Codacy Security Scan](https://github.com/PedroDrim/bml-golang/actions/workflows/codacy.yml/badge.svg?branch=simpleclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/codacy.yml)
 
 ### Introdução
@@ -13,8 +13,7 @@ Ferramentas utilizadas neste repositório bem como suas versões:
 
 |Ferramenta |Versão  |
 |-----------|--------|
-|Kotlin     |2.0.0   |
-|JVM        |21      |
+|Go         |1.24.0  |
 |Docker     |24.0.7  |
 
 ### Instalação
@@ -40,10 +39,10 @@ sudo docker run simpleclass_golang
 4. O resultado sairá no STDOUT no seguinte formato:
 
 ```
-[START] Kotlin_1000000
-[OK]Tamanho: 1000000
-[OK]Tempo: 599 ms
-[END] Kotlin_1000000
+[START] Golang 100000
+[OK]Tamanho: 100000
+[OK]Tempo: 11.128785 ms
+[END] Golang 100000
 ```
 
 ### Garantia de Qualidade
