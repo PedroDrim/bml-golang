@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ./ /app/
 
 # Executando testes
-RUN ./go test ./...
+RUN go test ./...
 
 # Iniciando CLI
 ENTRYPOINT ["sh","Bench.sh"]
