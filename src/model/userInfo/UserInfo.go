@@ -8,16 +8,19 @@ import (
 type UserInfo struct {
 	user string
 	password string
+	credit float64
 }
 
 // NewUserInfo cria uma nova instância de UserInfo
 // @param user Nome do usuario
 // @param password Senha do usuario
+// @param credit Creditos do usuario
 // @return Retorna um ponteiro para UserInfo
-func NewUserInfo(user string, password string) *UserInfo {
+func NewUserInfo(user string, password string, credit float64) *UserInfo {
 	return &UserInfo{
 		user: user,
 		password: password,
+		credit: credit,
 	}
 }
 
@@ -33,6 +36,12 @@ func (u *UserInfo) SetPassword(password string) {
 	u.password = password
 }
 
+// SetCredit atualiza o valor do credito
+// @param credit Valor do credito
+func (u *UserInfo) SetCredit(credit float64) {
+	u.credit = credit
+}
+
 // GetUser retorna o nome do usuário
 // @return nome do usuario
 func (u *UserInfo) GetUser() string {
@@ -43,6 +52,12 @@ func (u *UserInfo) GetUser() string {
 // @return senha do usuario criptografada
 func (u *UserInfo) GetPassword() string {
 	return cryptPassword(u.password)
+}
+
+// GetCredit retorna o valor do credito
+// @return valor do credito
+func (u *UserInfo) GetCredit() float64 {
+	return u.credit
 }
 
 // cryptPassword é uma função interna para criptografar a senha

@@ -1,7 +1,7 @@
 # bml-Go
 
-[![Run Docker with Tests (Go)](https://github.com/PedroDrim/bml-golang/actions/workflows/go.yml/badge.svg?branch=simpleclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/go.yml)
-[![Codacy Security Scan](https://github.com/PedroDrim/bml-golang/actions/workflows/codacy.yml/badge.svg?branch=simpleclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/codacy.yml)
+[![Run Docker with Tests (Go)](https://github.com/PedroDrim/bml-golang/actions/workflows/go.yml/badge.svg?branch=inputclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/go.yml)
+[![Codacy Security Scan](https://github.com/PedroDrim/bml-golang/actions/workflows/codacy.yml/badge.svg?branch=inputclass)](https://github.com/PedroDrim/bml-golang/actions/workflows/codacy.yml)
 
 ### Introdução
 
@@ -39,10 +39,14 @@ sudo docker run simpleclass_golang
 4. O resultado sairá no STDOUT no seguinte formato:
 
 ```
-[START] Golang 100000
-[OK]Tamanho: 100000
-[OK]Tempo: 11.128785 ms
-[END] Golang 100000
+[START] Golang_ data/test.csv
+[OK]Arquivo: data/test.csv
+[OK]TempoLeitura: 0.044436 ms
+[OK]TempoAnalise: 0.000295 ms
+[OK]Max: 10
+[OK]Min: 1
+[OK]Mean: 5.5
+[END] Golang_ data/test.csv
 ```
 
 ### Garantia de Qualidade
@@ -66,3 +70,4 @@ Esta seção é a mais divertida (na minha opinião), pois nela descrevo os expe
 | Nome (com link) | Objetivo | Técnicas utilizadas para análise |
 |-----------------|----------|----------------------------------|
 | [simpleclass](https://github.com/PedroDrim/Benchmark-Languages/blob/simpleclass/Documents/simpleclass.md) | Estudar a criação de classes simples | Scatterplot de média com desvio padrão e regressão linear simples.|
+| [inputclass](https://github.com/PedroDrim/Benchmark-Languages/blob/master/outputs/inputclass/inputclass.md) | Estudar a leitura de arquivos e interfaces | Análise por média e exibição por Barplot estacado |
