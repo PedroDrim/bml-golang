@@ -16,7 +16,7 @@ func NewMinValueAnalysis() *MinValueAnalysis {
 // Método responsável por obter o menor valor de credit na lista de usuarios
 // @list Lista de usuarios
 // @return Valor minimo da lista
-func (obj *MinValueAnalysis) Analysis(userInfoList []userInfo.UserInfo) float64 {
+func (obj *MinValueAnalysis) Analysis(userInfoList []userinfo.UserInfo) float64 {
 	minValue := math.MaxFloat64
 
 	for i := range userInfoList {

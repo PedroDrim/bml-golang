@@ -16,7 +16,7 @@ func NewMaxValueAnalysis() *MaxValueAnalysis {
 // Método responsável por obter o maior valor de credit na lista de usuarios
 // @list Lista de usuarios
 // @return Valor maximo da lista
-func (obj *MaxValueAnalysis) Analysis(userInfoList []userInfo.UserInfo) float64 {
+func (obj *MaxValueAnalysis) Analysis(userInfoList []userinfo.UserInfo) float64 {
 	maxValue := math.SmallestNonzeroFloat64
 
 	for i := range userInfoList {

@@ -15,7 +15,7 @@ func NewMeanAnalysis() *MeanAnalysis {
 // Método responsável por obter a media de valores de credit na lista de usuarios
 // @list Lista de usuarios
 // @return Media de valores de credit da lista
-func (obj *MeanAnalysis) Analysis(userInfoList []userInfo.UserInfo) float64 {
+func (obj *MeanAnalysis) Analysis(userInfoList []userinfo.UserInfo) float64 {
 	var sum float64
 
 	for i := range userInfoList {

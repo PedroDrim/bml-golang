@@ -4,6 +4,7 @@ import (
     "fmt"
     "os"
     "time"
+	"github.com/pedrodrim/bml-golang/src/model/simpleTableAnalysis"
     "github.com/pedrodrim/bml-golang/src/model/table"
     "github.com/pedrodrim/bml-golang/src/provider/maxValueAnalysis"
     "github.com/pedrodrim/bml-golang/src/provider/minValueAnalysis"
@@ -25,11 +26,11 @@ func main() {
     // Obtendo o tempo final de leitura em milissegundos
     leitura_fim := time.Now().UnixNano()
 
-    userInfoList := userTable.UserInfoList
+    userInfoList := userTable.GetUserInfoList()
 
-    maxValue := maxvalueanalysis.NewMaxValueAnalysis()
-    minValue := minvalueanalysis.NewMinValueAnalysis()
-    meanValue := meananalysis.NewMeanAnalysis()
+    var maxValue simpletableanalysis.SimpleTableAnalysis = maxvalueanalysis.NewMaxValueAnalysis()
+    var minValue simpletableanalysis.SimpleTableAnalysis = minvalueanalysis.NewMinValueAnalysis()
+    var meanValue simpletableanalysis.SimpleTableAnalysis = meananalysis.NewMeanAnalysis()
 
     // Obtendo o tempo inicial de analise em milissegundos
     analise_inicio := time.Now().UnixNano()

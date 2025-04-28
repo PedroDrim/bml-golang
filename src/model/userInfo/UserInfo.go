@@ -1,4 +1,4 @@
-package userInfo
+package userinfo
 
 import (
 	"bytes"
