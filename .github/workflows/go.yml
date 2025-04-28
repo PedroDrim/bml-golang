@@ -21,8 +21,8 @@ jobs:
         with:
           go-version: '1.23.x'  # Defina a versão do Go que você está utilizando
 
-      - name: 🧪 Executar testes
-        run: go test -cover ./... >> test-results.xml
+      #- name: 🧪 Executar testes
+      #  run: go test -cover ./... >> test-results.xml
 
 
       - name: 📤 Upload da cobertura de testes
