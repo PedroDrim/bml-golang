@@ -42,14 +42,13 @@ sudo docker compose down -v
 4. O resultado sairá no STDOUT no seguinte formato:
 
 ```
-[START] Golang_ data/test.csv
-[OK]Arquivo: data/test.csv
-[OK]TempoLeitura: 0.044436 ms
-[OK]TempoAnalise: 0.000295 ms
-[OK]Max: 10
-[OK]Min: 1
-[OK]Mean: 5.5
-[END] Golang_ data/test.csv
+{
+        "Read@0":"2",
+        "SummaryAnalysis@0":"0",
+        "BubbleAnalysis@0":"1",
+        "QuickAnalysis@0":"1",
+        "LanguageAnalysis@0":"0"
+}
 ```
 
 ### Garantia de Qualidade
